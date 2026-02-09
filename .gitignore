@@ -1,10 +1,16 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# env
+.env
+.venv/
 
-# Virtual environments
-.venv
+# vector db
+vectorstore/
+
+# python
+__pycache__/
+*.pyc
+
+# jupyter
+.ipynb_checkpoints/
+
+# python packaging
+*.egg-info/
