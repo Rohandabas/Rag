@@ -1,17 +1,26 @@
 ## Smart Study Assistant
 
-Upload your PDFs and ask questions. The app answers only from your notes and shows sources.
+# RAG Application with LangChain & Gemini
 
-### Setup
-1. Create a `.env` file with:
-	- `GEMINI_API_KEY=your_key_here`
-2. Install dependencies from `pyproject.toml`.
+## Overview
+This project demonstrates a Retrieval-Augmented Generation (RAG) pipeline
+using LangChain, Google Gemini, and ChromaDB.
 
-### Run (local)
-Start Streamlit and open the provided URL:
-- `streamlit run app.py`
+## Features
+- RAG with custom text
+- RAG with PDF documents
+- Persistent vector store (Chroma)
+- Semantic search + LLM generation
 
-### Notes
-- Vector store is local Chroma in `data/chroma`.
-- Uploaded files are stored in `data/uploads`.
-- If Gemini embeddings fail, keep "Use local embeddings" enabled (default).
+## Tech Stack
+- Python
+- LangChain
+- Google Gemini
+- ChromaDB
+
+## How it works
+1. Load & chunk documents
+2. Create embeddings
+3. Store in vector database
+4. Retrieve relevant context
+5. Generate answer using LLM
